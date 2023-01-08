@@ -17,7 +17,12 @@ java -jar -Dspring.profiles.active=local -Dserver.port=[원하는 포트 번호]
 
 ### ✔️ 방법4
 ```
-랜덤 포트 사용하기
+❗️ 랜덤 포트 사용하기
 server:
   port: 0 # using random port
+  
+❗️ Eureka server url에서 인스턴스 확인하기(그냥 랜덤 포트 사용 시 보이지 않는다)
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id}:${random.value}
 ```
