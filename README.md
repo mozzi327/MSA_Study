@@ -14,3 +14,10 @@ Intelij -> Edit Configurations -> Add VM Options -> -Dserver.port=[원하는 포
 ```
 java -jar -Dspring.profiles.active=local -Dserver.port=[원하는 포트 번호] ./build/libs/user-service-0.0.1-SNAPSHOT.jar
 ```
+
+### ✔️ 방법4
+```
+랜덤 포트 사용하기
+server:
+  port: 0 # using random port
+```
