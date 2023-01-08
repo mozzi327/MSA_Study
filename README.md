@@ -24,5 +24,5 @@ server:
 ❗️ Eureka server url에서 인스턴스 확인하기(그냥 랜덤 포트 사용 시 보이지 않는다)
 eureka:
   instance:
-    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id}:${random.value}
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
 ```
